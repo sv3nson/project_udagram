@@ -17,7 +17,7 @@ router.get('/filteredimage', async (req, res) => {
         res.status(500).json({
             messages: "Internal Error processing file"
         })
-    } deleteLocalFiles([imagePath]);
+    } 
     
     
 })
