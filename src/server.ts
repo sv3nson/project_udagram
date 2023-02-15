@@ -1,6 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 import {filterImageFromURL, deleteLocalFiles} from './util/util';
+import filterImageController from './controller/v0/filterImageController'
 
 (async () => {
 
@@ -29,6 +30,7 @@ import {filterImageFromURL, deleteLocalFiles} from './util/util';
 
   /**************************************************************************** */
 
+  app.use(filterImageController);
   //! END @TODO1
   
   // Root Endpoint
